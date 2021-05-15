@@ -7,6 +7,8 @@ import static com.company.ex3_BarkingDog.shouldWakeUp;
 import static com.company.ex4_LeapYear.isLeapYear;
 import static com.company.ex5_DecimalComparator.areEqualByThreeDecimalPlaces;
 import static com.company.ex6_EqualSumChecker.hasEqualSum;
+import static com.company.ex7_TeenNumberChecker.hasTeen;
+import static com.company.ex7_TeenNumberChecker.isTeen;
 
 public class Main {
 
@@ -58,6 +60,14 @@ public class Main {
         System.out.println(hasEqualSum(1, 1, 1)); // should return false since 1 + 1 is not equal to 1
         System.out.println(hasEqualSum(1, 1, 2)); // should return true since 1 + 1 is equal to 2
         System.out.println(hasEqualSum(1, -1, 0)); // should return true since 1 + (-1) is 1 - 1 and is equal to 0
+*/
+        // Exercise 7 - Teen Number Checker
+/*
+        System.out.println(hasTeen(9, 99, 19)); // should return true since 19 is in range 13 - 19
+        System.out.println(hasTeen(23, 15, 42)); // should return true since 15 is in range 13 - 19
+        System.out.println(hasTeen(22, 23, 34)); // should return false since numbers 22, 23, 34 are not in range 13-19
+        System.out.println(isTeen(9)); // should return false since 9 is in not range 13 - 19
+        System.out.println(isTeen(13)); // should return true since 13 is in range 13 - 19
 */
     }
 }
