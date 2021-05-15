@@ -10,6 +10,7 @@ import static com.company.ex6_EqualSumChecker.hasEqualSum;
 import static com.company.ex7_TeenNumberChecker.hasTeen;
 import static com.company.ex7_TeenNumberChecker.isTeen;
 import static com.company.ex8_AreaCalculator.area;
+import static com.company.ex9_MinutesToYearsDaysCalculator.printYearsAndDays;
 
 public class Main {
 
@@ -76,6 +77,12 @@ public class Main {
         System.out.println(area(-1)); // should return -1 since the parameter is negative
         System.out.println(area(5.0, 4.0)); // should return 20.0 (5 * 4 = 20)
         System.out.println(area(-1.0, 4.0)); // should return -1 since first the parameter is negative
+*/
+        // Exercise 9 - Minutes To Years and Days Calculator
+/*
+        printYearsAndDays(525600); // should print "525600 min = 1 y and 0 d"
+        printYearsAndDays(1051200); // should print "1051200 min = 2 y and 0 d"
+        printYearsAndDays(561600); // should print "561600 min = 1 y and 25 d"
 */
     }
 }
