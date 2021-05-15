@@ -4,6 +4,7 @@ import static com.company.ex1_SpeedConverter.printConversion;
 import static com.company.ex1_SpeedConverter.toMilesPerHour;
 import static com.company.ex2_MegaBytesConverter.printMegaBytesAndKiloBytes;
 import static com.company.ex3_BarkingDog.shouldWakeUp;
+import static com.company.ex4_LeapYear.isLeapYear;
 
 public class Main {
 
@@ -35,5 +36,10 @@ public class Main {
         System.out.println(shouldWakeUp(true, 8)); // should return false, since it's not before 8.
         System.out.println(shouldWakeUp(true, -1)); // should return false since the hourOfDay parameter needs to be in a range 0-23.
 */
+        // Exercise 4 - Leap Year Calculator
+        System.out.println(isLeapYear(-1600)); // should return false since the parameter is not in range (1-9999)
+        System.out.println(isLeapYear(1600)); // should return true since 1600 is a leap year
+        System.out.println(isLeapYear(2017)); // should return false since 2017 is not a leap year
+        System.out.println(isLeapYear(2000)); // should return true because 2000 is a leap year
     }
 }
