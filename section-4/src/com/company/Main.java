@@ -1,5 +1,8 @@
 package com.company;
 
+import com.sun.jdi.Value;
+
+import static com.company.ex10_IntEqualityPrinter.printEqual;
 import static com.company.ex1_SpeedConverter.printConversion;
 import static com.company.ex1_SpeedConverter.toMilesPerHour;
 import static com.company.ex2_MegaBytesConverter.printMegaBytesAndKiloBytes;
@@ -83,6 +86,13 @@ public class Main {
         printYearsAndDays(525600); // should print "525600 min = 1 y and 0 d"
         printYearsAndDays(1051200); // should print "1051200 min = 2 y and 0 d"
         printYearsAndDays(561600); // should print "561600 min = 1 y and 25 d"
+*/
+        // Exercise 10 - Equality Printer
+/*
+        printEqual(1, 1, 1); // should print text All numbers are equal
+        printEqual(1, 1, 2); // should print text Neither all are equal or different
+        printEqual(-1, -1, -1); // should print text Invalid Value
+        printEqual(1, 2, 3); // should print text All numbers are different
 */
     }
 }
