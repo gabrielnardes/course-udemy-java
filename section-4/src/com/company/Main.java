@@ -3,6 +3,7 @@ package com.company;
 import static com.company.ex1_SpeedConverter.printConversion;
 import static com.company.ex1_SpeedConverter.toMilesPerHour;
 import static com.company.ex2_MegaBytesConverter.printMegaBytesAndKiloBytes;
+import static com.company.ex3_BarkingDog.shouldWakeUp;
 
 public class Main {
 
@@ -26,6 +27,13 @@ public class Main {
         printMegaBytesAndKiloBytes(2500); // should print the following text: "2500 KB = 2 MB and 452 KB"
         printMegaBytesAndKiloBytes(-1024); // should print the following text: "Invalid Value" because parameter is less than 0.
         printMegaBytesAndKiloBytes(5000); // should print the following text: "5000 KB = 4 MB and 904 KB"
+*/
+        // Exercise 3 - Barking Dog
+/*
+        System.out.println(shouldWakeUp(true, 1)); // should return true
+        System.out.println(shouldWakeUp(false, 2)); // should return false since the dog is not barking.
+        System.out.println(shouldWakeUp(true, 8)); // should return false, since it's not before 8.
+        System.out.println(shouldWakeUp(true, -1)); // should return false since the hourOfDay parameter needs to be in a range 0-23.
 */
     }
 }
