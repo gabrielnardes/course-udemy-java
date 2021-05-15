@@ -3,6 +3,7 @@ package com.company;
 import com.sun.jdi.Value;
 
 import static com.company.ex10_IntEqualityPrinter.printEqual;
+import static com.company.ex11_PlayingCat.isCatPlaying;
 import static com.company.ex1_SpeedConverter.printConversion;
 import static com.company.ex1_SpeedConverter.toMilesPerHour;
 import static com.company.ex2_MegaBytesConverter.printMegaBytesAndKiloBytes;
@@ -93,6 +94,12 @@ public class Main {
         printEqual(1, 1, 2); // should print text Neither all are equal or different
         printEqual(-1, -1, -1); // should print text Invalid Value
         printEqual(1, 2, 3); // should print text All numbers are different
+*/
+        // Exercise 11 - Playing Cat
+/*
+        System.out.println(isCatPlaying(true, 10)); // should return false since temperature is not in range 25 - 45
+        System.out.println(isCatPlaying(false, 36)); // should return false since temperature is not in range 25 - 35 (summer parameter is false)
+        System.out.println(isCatPlaying(false, 35)); // should return true since temperature is in range 25 - 35
 */
     }
 }
