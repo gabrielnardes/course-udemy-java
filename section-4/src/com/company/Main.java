@@ -5,6 +5,7 @@ import static com.company.ex1_SpeedConverter.toMilesPerHour;
 import static com.company.ex2_MegaBytesConverter.printMegaBytesAndKiloBytes;
 import static com.company.ex3_BarkingDog.shouldWakeUp;
 import static com.company.ex4_LeapYear.isLeapYear;
+import static com.company.ex5_DecimalComparator.areEqualByThreeDecimalPlaces;
 
 public class Main {
 
@@ -37,9 +38,20 @@ public class Main {
         System.out.println(shouldWakeUp(true, -1)); // should return false since the hourOfDay parameter needs to be in a range 0-23.
 */
         // Exercise 4 - Leap Year Calculator
+/*
         System.out.println(isLeapYear(-1600)); // should return false since the parameter is not in range (1-9999)
         System.out.println(isLeapYear(1600)); // should return true since 1600 is a leap year
         System.out.println(isLeapYear(2017)); // should return false since 2017 is not a leap year
         System.out.println(isLeapYear(2000)); // should return true because 2000 is a leap year
+*/
+        // Exercise 5 - Decimal Comparator
+/*
+        System.out.println(areEqualByThreeDecimalPlaces(-3.1756, -3.175)); // should return true since numbers are equal up to 3 decimal places.
+        System.out.println(areEqualByThreeDecimalPlaces(3.175, 3.176)); // should return false since numbers are not equal up to 3 decimal places
+        System.out.println(areEqualByThreeDecimalPlaces(3.0, 3.0)); // should return true since numbers are equal up to 3 decimal places.
+        System.out.println(areEqualByThreeDecimalPlaces(-3.123, 3.123)); // should return false since numbers are not equal up to 3 decimal places.
+        System.out.println(areEqualByThreeDecimalPlaces(3.174, 3.175)); // should return false since numbers are not equal up to 3 decimal places.
+*/
+
     }
 }
