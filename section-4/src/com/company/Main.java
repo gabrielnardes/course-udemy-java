@@ -9,6 +9,7 @@ import static com.company.ex5_DecimalComparator.areEqualByThreeDecimalPlaces;
 import static com.company.ex6_EqualSumChecker.hasEqualSum;
 import static com.company.ex7_TeenNumberChecker.hasTeen;
 import static com.company.ex7_TeenNumberChecker.isTeen;
+import static com.company.ex8_AreaCalculator.area;
 
 public class Main {
 
@@ -68,6 +69,13 @@ public class Main {
         System.out.println(hasTeen(22, 23, 34)); // should return false since numbers 22, 23, 34 are not in range 13-19
         System.out.println(isTeen(9)); // should return false since 9 is in not range 13 - 19
         System.out.println(isTeen(13)); // should return true since 13 is in range 13 - 19
+*/
+        // Exercise 8 - Area Calculator
+/*
+        System.out.println(area(5.0)); // should return 78.53975
+        System.out.println(area(-1)); // should return -1 since the parameter is negative
+        System.out.println(area(5.0, 4.0)); // should return 20.0 (5 * 4 = 20)
+        System.out.println(area(-1.0, 4.0)); // should return -1 since first the parameter is negative
 */
     }
 }
