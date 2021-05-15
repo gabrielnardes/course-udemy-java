@@ -6,6 +6,7 @@ import static com.company.ex2_MegaBytesConverter.printMegaBytesAndKiloBytes;
 import static com.company.ex3_BarkingDog.shouldWakeUp;
 import static com.company.ex4_LeapYear.isLeapYear;
 import static com.company.ex5_DecimalComparator.areEqualByThreeDecimalPlaces;
+import static com.company.ex6_EqualSumChecker.hasEqualSum;
 
 public class Main {
 
@@ -52,6 +53,11 @@ public class Main {
         System.out.println(areEqualByThreeDecimalPlaces(-3.123, 3.123)); // should return false since numbers are not equal up to 3 decimal places.
         System.out.println(areEqualByThreeDecimalPlaces(3.174, 3.175)); // should return false since numbers are not equal up to 3 decimal places.
 */
-
+        // Exercise 6 - Equal Sum Checker
+/*
+        System.out.println(hasEqualSum(1, 1, 1)); // should return false since 1 + 1 is not equal to 1
+        System.out.println(hasEqualSum(1, 1, 2)); // should return true since 1 + 1 is equal to 2
+        System.out.println(hasEqualSum(1, -1, 0)); // should return true since 1 + (-1) is 1 - 1 and is equal to 0
+*/
     }
 }
