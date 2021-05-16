@@ -3,6 +3,9 @@ package com.company;
 public class ex12_NumberInWord {
     public static void printNumberInWord(int n) {
         switch (n) {
+            case 0:
+                System.out.println("ZERO");
+                break;
             case 1:
                 System.out.println("ONE");
                 break;
