@@ -2,6 +2,7 @@ package com.company;
 
 import static com.company.ex12_NumberInWord.printNumberInWord;
 import static com.company.ex13_NumberOfDaysInMonth.getDaysInMonth;
+import static com.company.ex14_SumOddRange.sumOdd;
 
 public class Main {
 
@@ -21,5 +22,12 @@ public class Main {
         System.out.println(getDaysInMonth(-1, 2020)); // should return -1 since the parameter month is invalid.
         System.out.println(getDaysInMonth(1, -2020)); // should return -1 since the parameter year is outside the range of 1 to 9999.
 */
+        // Exercise 14 - Sum Odd
+        System.out.println(sumOdd(1, 100)); // should return 2500
+        System.out.println(sumOdd(-1, 100)); // should return -1
+        System.out.println(sumOdd(100, 100)); // should return 0
+        System.out.println(sumOdd(13, 13)); // should return 13 (This set contains one number, 13, and it is odd)
+        System.out.println(sumOdd(100, -100)); // should return -1
+        System.out.println(sumOdd(100, 1000)); // should return 247500
     }
 }
