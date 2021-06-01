@@ -6,6 +6,7 @@ import static section5.ex14_SumOddRange.sumOdd;
 import static section5.ex15_NumberPalindrome.isPalindrome;
 import static section5.ex16_FirstAndLastDigitSum.sumFirstAndLastDigit;
 import static section5.ex17_EvenDigitSum.getEvenDigitSum;
+import static section5.ex18_SharedDigit.hasSharedDigit;
 
 public class Section5 {
     public static void main(String[] args) {
@@ -15,6 +16,7 @@ public class Section5 {
 //        ex15();
 //        ex16();
 //        ex17();
+//        ex18();
     }
 
     private static void ex12() {
@@ -65,5 +67,12 @@ public class Section5 {
         System.out.println(getEvenDigitSum(123456789)); // should return 20 since 2 + 4 + 6 + 8 = 20
         System.out.println(getEvenDigitSum(252)); // should return 4 since 2 + 2 = 4
         System.out.println(getEvenDigitSum(-22)); // should return -1 since the number is negative
+    }
+
+    private static void ex18() {
+        System.out.println("\nExercise 18 - Shared Digit - Section 5");
+        System.out.println(hasSharedDigit(12, 23)); // should return true since the digit 2 appears in both numbers
+        System.out.println(hasSharedDigit(9, 99)); // should return false since 9 is not within the range of 10-99
+        System.out.println(hasSharedDigit(15, 55)); // should return true since the digit 5 appears in both numbers
     }
 }
