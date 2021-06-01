@@ -2,8 +2,7 @@ package section5;
 
 import static section5.ex16_FirstAndLastDigitSum.sumFirstAndLastDigit;
 
-public class Main {
-
+public class Section5 {
     public static void main(String[] args) {
         // Exercise 12 - Number In Word
 /*
