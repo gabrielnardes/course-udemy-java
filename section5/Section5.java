@@ -8,6 +8,7 @@ import static section5.ex16_FirstAndLastDigitSum.sumFirstAndLastDigit;
 import static section5.ex17_EvenDigitSum.getEvenDigitSum;
 import static section5.ex18_SharedDigit.hasSharedDigit;
 import static section5.ex19_LastDigitChecker.hasSameLastDigit;
+import static section5.ex20_GreatestCommonDivisor.getGreatestCommonDivisor;
 
 public class Section5 {
     public static void main(String[] args) {
@@ -19,6 +20,7 @@ public class Section5 {
 //        ex17();
 //        ex18();
 //        ex19();
+//        ex20();
     }
 
     private static void ex12() {
@@ -83,5 +85,13 @@ public class Section5 {
         System.out.println(hasSameLastDigit(41, 22, 71)); // should return true since 1 is the rightmost digit in numbers 41 and 71
         System.out.println(hasSameLastDigit(23, 32, 42)); // should return true since 2 is the rightmost digit in numbers 32 and 42
         System.out.println(hasSameLastDigit(9, 99, 999)); // should return false since 9 is not within the range of 10-1000
+    }
+
+    private static void ex20() {
+        System.out.println("\nExercise 20 - Greatest Common Divisor - Section 5");
+        System.out.println(getGreatestCommonDivisor(25, 15)); // should return 5 since both can be divided by 5 without a remainder
+        System.out.println(getGreatestCommonDivisor(12, 30)); // should return 6 since both can be divided by 6 without a remainder
+        System.out.println(getGreatestCommonDivisor(9, 18)); // should return -1 since the first parameter is < 10
+        System.out.println(getGreatestCommonDivisor(81, 153)); // should return 9 since both can be divided by 9 without a remainder
     }
 }
