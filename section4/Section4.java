@@ -1,23 +1,6 @@
-package com.company;
+package section4;
 
-import com.sun.jdi.Value;
-
-import static com.company.ex10_IntEqualityPrinter.printEqual;
-import static com.company.ex11_PlayingCat.isCatPlaying;
-import static com.company.ex1_SpeedConverter.printConversion;
-import static com.company.ex1_SpeedConverter.toMilesPerHour;
-import static com.company.ex2_MegaBytesConverter.printMegaBytesAndKiloBytes;
-import static com.company.ex3_BarkingDog.shouldWakeUp;
-import static com.company.ex4_LeapYear.isLeapYear;
-import static com.company.ex5_DecimalComparator.areEqualByThreeDecimalPlaces;
-import static com.company.ex6_EqualSumChecker.hasEqualSum;
-import static com.company.ex7_TeenNumberChecker.hasTeen;
-import static com.company.ex7_TeenNumberChecker.isTeen;
-import static com.company.ex8_AreaCalculator.area;
-import static com.company.ex9_MinutesToYearsDaysCalculator.printYearsAndDays;
-
-public class Main {
-
+public class Section4 {
     public static void main(String[] args) {
 	    // Exercise 1 - Speed Converter
 /*

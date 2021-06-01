@@ -1,4 +1,4 @@
-package com.company;
+package section5;
 
 public class ex14_SumOddRange {
     public static boolean isOdd(int n) {

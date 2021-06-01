@@ -1,4 +1,4 @@
-package com.company;
+package section4;
 
 public class ex11_PlayingCat {
     public static boolean isCatPlaying(boolean summer, int temperature) {

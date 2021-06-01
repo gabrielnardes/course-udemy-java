@@ -1,4 +1,4 @@
-package com.company;
+package section4;
 
 public class ex7_TeenNumberChecker {
     public static boolean hasTeen(int age1, int age2, int age3) {

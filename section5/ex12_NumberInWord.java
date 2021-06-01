@@ -1,4 +1,4 @@
-package com.company;
+package section5;
 
 public class ex12_NumberInWord {
     public static void printNumberInWord(int n) {

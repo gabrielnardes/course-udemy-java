@@ -1,4 +1,4 @@
-package com.company;
+package section4;
 
 public class ex4_LeapYear {
     public static boolean isLeapYear(int year) {

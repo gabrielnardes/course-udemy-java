@@ -1,4 +1,4 @@
-package com.company;
+package section4;
 
 public class ex10_IntEqualityPrinter {
     public static void printEqual(int a, int b, int c) {

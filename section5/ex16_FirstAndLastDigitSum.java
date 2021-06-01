@@ -1,4 +1,4 @@
-package com.company;
+package section5;
 
 public class ex16_FirstAndLastDigitSum {
     public static int sumFirstAndLastDigit(int number) {

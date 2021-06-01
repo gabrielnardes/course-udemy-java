@@ -1,4 +1,4 @@
-package com.company;
+package section4;
 
 public class ex2_MegaBytesConverter {
     public static void printMegaBytesAndKiloBytes(int kiloBytes) {

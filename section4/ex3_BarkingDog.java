@@ -1,4 +1,4 @@
-package com.company;
+package section4;
 
 public class ex3_BarkingDog {
     public static boolean shouldWakeUp(boolean barking, int hourOfDay) {

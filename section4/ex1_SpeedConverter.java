@@ -1,4 +1,4 @@
-package com.company;
+package section4;
 
 public class ex1_SpeedConverter {
     public static long toMilesPerHour(double kilometersPerHour) {

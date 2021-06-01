@@ -1,4 +1,4 @@
-package com.company;
+package section4;
 
 public class ex9_MinutesToYearsDaysCalculator {
     public static void printYearsAndDays (long minutes) {
