@@ -7,6 +7,7 @@ import static section5.ex15_NumberPalindrome.isPalindrome;
 import static section5.ex16_FirstAndLastDigitSum.sumFirstAndLastDigit;
 import static section5.ex17_EvenDigitSum.getEvenDigitSum;
 import static section5.ex18_SharedDigit.hasSharedDigit;
+import static section5.ex19_LastDigitChecker.hasSameLastDigit;
 
 public class Section5 {
     public static void main(String[] args) {
@@ -17,6 +18,7 @@ public class Section5 {
 //        ex16();
 //        ex17();
 //        ex18();
+//        ex19();
     }
 
     private static void ex12() {
@@ -74,5 +76,12 @@ public class Section5 {
         System.out.println(hasSharedDigit(12, 23)); // should return true since the digit 2 appears in both numbers
         System.out.println(hasSharedDigit(9, 99)); // should return false since 9 is not within the range of 10-99
         System.out.println(hasSharedDigit(15, 55)); // should return true since the digit 5 appears in both numbers
+    }
+
+    private static void ex19() {
+        System.out.println("\nExercise 19 - Last Digit Checker - Section 5");
+        System.out.println(hasSameLastDigit(41, 22, 71)); // should return true since 1 is the rightmost digit in numbers 41 and 71
+        System.out.println(hasSameLastDigit(23, 32, 42)); // should return true since 2 is the rightmost digit in numbers 32 and 42
+        System.out.println(hasSameLastDigit(9, 99, 999)); // should return false since 9 is not within the range of 10-1000
     }
 }
