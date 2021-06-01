@@ -5,14 +5,16 @@ import static section5.ex13_NumberOfDaysInMonth.getDaysInMonth;
 import static section5.ex14_SumOddRange.sumOdd;
 import static section5.ex15_NumberPalindrome.isPalindrome;
 import static section5.ex16_FirstAndLastDigitSum.sumFirstAndLastDigit;
+import static section5.ex17_EvenDigitSum.getEvenDigitSum;
 
 public class Section5 {
     public static void main(String[] args) {
-        ex12();
-        ex13();
-        ex14();
-        ex15();
-        ex16();
+//        ex12();
+//        ex13();
+//        ex14();
+//        ex15();
+//        ex16();
+//        ex17();
     }
 
     private static void ex12() {
@@ -56,5 +58,12 @@ public class Section5 {
         System.out.println(sumFirstAndLastDigit(0)); // should return 0, the first digit and the last digit is 0 since we only have 1 digit, which gives us 0+0 and the sum is 0.
         System.out.println(sumFirstAndLastDigit(5)); // should return 10, the first digit and the last digit is 5 since we only have 1 digit, which gives us 5+5 and the sum is 10.
         System.out.println(sumFirstAndLastDigit(-10)); // should return -1, since the parameter is negative and needs to be positive.
+    }
+
+    private static void ex17() {
+        System.out.println("\nExercise 17 - Even Digit Sum - Section 5");
+        System.out.println(getEvenDigitSum(123456789)); // should return 20 since 2 + 4 + 6 + 8 = 20
+        System.out.println(getEvenDigitSum(252)); // should return 4 since 2 + 2 = 4
+        System.out.println(getEvenDigitSum(-22)); // should return -1 since the number is negative
     }
 }
