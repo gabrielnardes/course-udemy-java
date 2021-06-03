@@ -9,6 +9,7 @@ import static section5.ex17_EvenDigitSum.getEvenDigitSum;
 import static section5.ex18_SharedDigit.hasSharedDigit;
 import static section5.ex19_LastDigitChecker.hasSameLastDigit;
 import static section5.ex20_GreatestCommonDivisor.getGreatestCommonDivisor;
+import static section5.ex21_FactorPrinter.printFactors;
 
 public class Section5 {
     public static void main(String[] args) {
@@ -21,6 +22,7 @@ public class Section5 {
 //        ex18();
 //        ex19();
 //        ex20();
+//        ex21();
     }
 
     private static void ex12() {
@@ -93,5 +95,13 @@ public class Section5 {
         System.out.println(getGreatestCommonDivisor(12, 30)); // should return 6 since both can be divided by 6 without a remainder
         System.out.println(getGreatestCommonDivisor(9, 18)); // should return -1 since the first parameter is < 10
         System.out.println(getGreatestCommonDivisor(81, 153)); // should return 9 since both can be divided by 9 without a remainder
+    }
+
+    private static void ex21() {
+        System.out.println("\nExercise 21 - All Factors - Section 5");
+        printFactors(6); // should print 1 2 3 6
+        printFactors(32); // should print 1 2 4 8 16 32
+        printFactors(10); // should print 1 2 5 10
+        printFactors(-1); // should print "Invalid Value" since number is < 1
     }
 }
