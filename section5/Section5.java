@@ -10,6 +10,7 @@ import static section5.ex18_SharedDigit.hasSharedDigit;
 import static section5.ex19_LastDigitChecker.hasSameLastDigit;
 import static section5.ex20_GreatestCommonDivisor.getGreatestCommonDivisor;
 import static section5.ex21_FactorPrinter.printFactors;
+import static section5.ex22_PerfectNumber.isPerfectNumber;
 
 public class Section5 {
     public static void main(String[] args) {
@@ -23,6 +24,7 @@ public class Section5 {
 //        ex19();
 //        ex20();
 //        ex21();
+//        ex22();
     }
 
     private static void ex12() {
@@ -103,5 +105,12 @@ public class Section5 {
         printFactors(32); // should print 1 2 4 8 16 32
         printFactors(10); // should print 1 2 5 10
         printFactors(-1); // should print "Invalid Value" since number is < 1
+    }
+
+    private static void ex22() {
+        System.out.println(isPerfectNumber(6)); // should return true since its proper divisors are 1, 2, 3 and the sum is 1 + 2 + 3 = 6
+        System.out.println(isPerfectNumber(28)); // should return true since its proper divisors are 1, 2, 4, 7, 14 and the sum is 1 + 2 + 4 + 7 + 14 = 28
+        System.out.println(isPerfectNumber(5)); // should return false since its only proper divisor is 1 and the sum is 1 not 5
+        System.out.println(isPerfectNumber(-1)); // should return false since the number is < 1
     }
 }

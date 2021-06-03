@@ -8,7 +8,7 @@ public class ex21_FactorPrinter {
 
         int factor = 1;
 
-        while (factor <= number) {
+        while (factor <= number/2) {
             if (number % factor == 0) {
                 System.out.printf("%d ", factor);
             }
