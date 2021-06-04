@@ -13,6 +13,7 @@ import static section5.ex21_FactorPrinter.printFactors;
 import static section5.ex22_PerfectNumber.isPerfectNumber;
 import static section5.ex23_NumberToWords.*;
 import static section5.ex24_FlourPacker.canPack;
+import static section5.ex25_LargestPrime.getLargestPrime;
 
 public class Section5 {
     public static void main(String[] args) {
@@ -29,6 +30,7 @@ public class Section5 {
 //        ex22();
 //        ex23();
 //        ex24();
+//        ex25();
     }
 
     private static void ex12() {
@@ -112,6 +114,7 @@ public class Section5 {
     }
 
     private static void ex22() {
+        System.out.println("\nExercise 22 - Perfect Number - Section 5");
         System.out.println(isPerfectNumber(6)); // should return true since its proper divisors are 1, 2, 3 and the sum is 1 + 2 + 3 = 6
         System.out.println(isPerfectNumber(28)); // should return true since its proper divisors are 1, 2, 4, 7, 14 and the sum is 1 + 2 + 4 + 7 + 14 = 28
         System.out.println(isPerfectNumber(5)); // should return false since its only proper divisor is 1 and the sum is 1 not 5
@@ -143,5 +146,14 @@ public class Section5 {
         System.out.println(canPack(0, 5, 4)); // should return true since smallCount is 5 (small bags of 1 kilo) and goal is 4 kilos, and we have 1 bag left which is ok as mentioned above.
         System.out.println(canPack(2, 2, 11)); // should return true since bigCount is 2 (big bags 5 kilos each) and smallCount is 2 (small bags of 1 kilo), makes in total 12 kilos and goal is 11 kilos.
         System.out.println(canPack(-3, 2, 12)); // should return false since bigCount is negative.
+    }
+
+    private static void ex25() {
+        System.out.println("\nExercise 25 - Largest Prime - Section 5");
+        System.out.println(getLargestPrime(21)); // should return 7 since 7 is the largest prime (3 * 7 = 21)
+        System.out.println(getLargestPrime(217)); // should return 31 since 31 is the largest prime (7 * 31 = 217)
+        System.out.println(getLargestPrime(0)); // should return -1 since 0 does not have any prime numbers
+        System.out.println(getLargestPrime(45)); // should return 5 since 5 is the largest prime (3 * 3 * 5 = 45)
+        System.out.println(getLargestPrime(-1)); // should return -1 since the parameter is negative
     }
 }
