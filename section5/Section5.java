@@ -12,6 +12,7 @@ import static section5.ex20_GreatestCommonDivisor.getGreatestCommonDivisor;
 import static section5.ex21_FactorPrinter.printFactors;
 import static section5.ex22_PerfectNumber.isPerfectNumber;
 import static section5.ex23_NumberToWords.*;
+import static section5.ex24_FlourPacker.canPack;
 
 public class Section5 {
     public static void main(String[] args) {
@@ -27,6 +28,7 @@ public class Section5 {
 //        ex21();
 //        ex22();
 //        ex23();
+//        ex24();
     }
 
     private static void ex12() {
@@ -132,5 +134,14 @@ public class Section5 {
         numberToWords(1010); // should print "One Zero One Zero".
         numberToWords(1000); // should print "One Zero Zero Zero".
         numberToWords(-12); // should print "Invalid Value" since the parameter is negative.
+    }
+
+    private static void ex24() {
+        System.out.println("\nExercise 24 - Flour Pack Problem - Section 5");
+        System.out.println(canPack(1, 0, 4)); // should return false since bigCount is 1 (big bag of 5 kilos) and goal is 4 kilos.
+        System.out.println(canPack(1, 0, 5)); // should return true since bigCount is 1 (big bag of 5 kilos) and goal is 5 kilos.
+        System.out.println(canPack(0, 5, 4)); // should return true since smallCount is 5 (small bags of 1 kilo) and goal is 4 kilos, and we have 1 bag left which is ok as mentioned above.
+        System.out.println(canPack(2, 2, 11)); // should return true since bigCount is 2 (big bags 5 kilos each) and smallCount is 2 (small bags of 1 kilo), makes in total 12 kilos and goal is 11 kilos.
+        System.out.println(canPack(-3, 2, 12)); // should return false since bigCount is negative.
     }
 }
