@@ -11,6 +11,7 @@ import static section5.ex19_LastDigitChecker.hasSameLastDigit;
 import static section5.ex20_GreatestCommonDivisor.getGreatestCommonDivisor;
 import static section5.ex21_FactorPrinter.printFactors;
 import static section5.ex22_PerfectNumber.isPerfectNumber;
+import static section5.ex23_NumberToWords.*;
 
 public class Section5 {
     public static void main(String[] args) {
@@ -25,6 +26,7 @@ public class Section5 {
 //        ex20();
 //        ex21();
 //        ex22();
+//        ex23();
     }
 
     private static void ex12() {
@@ -112,5 +114,23 @@ public class Section5 {
         System.out.println(isPerfectNumber(28)); // should return true since its proper divisors are 1, 2, 4, 7, 14 and the sum is 1 + 2 + 4 + 7 + 14 = 28
         System.out.println(isPerfectNumber(5)); // should return false since its only proper divisor is 1 and the sum is 1 not 5
         System.out.println(isPerfectNumber(-1)); // should return false since the number is < 1
+    }
+
+    private static void ex23() {
+        System.out.println("\nExercise 23 - Number To Words - Section 5");
+        System.out.println(getDigitCount(0)); // should return 1 since there is only 1 digit
+        System.out.println(getDigitCount(123)); // should return 3
+        System.out.println(getDigitCount(-12)); // should return -1 since the parameter is negative
+        System.out.println(getDigitCount(5200)); // should return 4 since there are 4 digits in the number
+
+        System.out.println(reverse(-121)); // should  return -121
+        System.out.println(reverse(1212)); // should return  2121
+        System.out.println(reverse(1234)); // should return 4321
+        System.out.println(reverse(100)); // should return 1
+
+        numberToWords(123); // should print "One Two Three".
+        numberToWords(1010); // should print "One Zero One Zero".
+        numberToWords(1000); // should print "One Zero Zero Zero".
+        numberToWords(-12); // should print "Invalid Value" since the parameter is negative.
     }
 }
